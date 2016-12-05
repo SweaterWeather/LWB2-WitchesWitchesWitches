@@ -42,6 +42,12 @@ public static class OmniController : object
     /// </summary>
     public static void Reset()
     {
+        SelectIcon.canBlack = true;
+        SelectIcon.canCyan = true;
+        SelectIcon.canGreen = true;
+        SelectIcon.canMagenta = true;
+        SelectIcon.canYellow = true;
+
         witchBlack = -1;
         witchCyan = -1;
         witchGreen = -1;

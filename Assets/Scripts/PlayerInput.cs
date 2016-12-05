@@ -94,7 +94,7 @@ public class PlayerInput : MonoBehaviour {
     {
         if (!player) return;
         float check = 0;
-        if (player.controller.fire1 > 0)
+        if (player.controller && player.controller.fire1 > 0)
         {
             if (player.canShoot)
             {
@@ -103,12 +103,12 @@ public class PlayerInput : MonoBehaviour {
             }
             player.charging.x += Time.deltaTime;
         }
-        else if (player.controller.fire1 == 0)
+        else if (player.controller && player.controller.fire1 == 0)
         {
             check++;
             player.charging.x = 0;
         }
-        if (player.controller.fire2 > 0)
+        if (player.controller && player.controller.fire2 > 0)
         {
             if (player.canShoot)
             {
@@ -117,12 +117,12 @@ public class PlayerInput : MonoBehaviour {
             }
             player.charging.y += Time.deltaTime;
         }
-        else if (player.controller.fire2 == 0)
+        else if (player.controller && player.controller.fire2 == 0)
         {
             check++;
             player.charging.y = 0;
         }
-        if (player.controller.fire3 > 0)
+        if (player.controller && player.controller.fire3 > 0)
         {
             if (player.canShoot)
             {
@@ -131,7 +131,7 @@ public class PlayerInput : MonoBehaviour {
             }
             player.charging.z += Time.deltaTime;
         }
-        else if (player.controller.fire3 == 0)
+        else if (player.controller && player.controller.fire3 == 0)
         {
             check++;
             player.charging.z = 0;

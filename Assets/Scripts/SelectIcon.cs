@@ -74,27 +74,27 @@ public class SelectIcon : MonoBehaviour {
     /// <summary>
     /// 
     /// </summary>
-    static bool canBlack = true;
+    public static bool canBlack = true;
 
     /// <summary>
     /// 
     /// </summary>
-    static bool canCyan = true;
+    public static bool canCyan = true;
 
     /// <summary>
     /// 
     /// </summary>
-    static bool canMagenta = true;
+    public static bool canMagenta = true;
 
     /// <summary>
     /// 
     /// </summary>
-    static bool canYellow = true;
+    public static bool canYellow = true;
 
     /// <summary>
     /// 
     /// </summary>
-    static bool canGreen = true;
+    public static bool canGreen = true;
 
     /// <summary>
     /// 
